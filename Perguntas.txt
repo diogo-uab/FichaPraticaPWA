@@ -15,5 +15,8 @@ O uso de Branches num repositório git proporciona muitas vantages, especialment
 
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
+Os conflitos podem acontecer quando a mesma região de um ficheiro foi alterada em mais do que um branch, ou presente num stash como neste caso, e o git não consegue decidir automaticamente que versão da alteração deve manter.
+Estes conflitos podem ser manualmente resolvidos em todos os blocos alterados e em conflito, tanto escolhendo quais alterações devem ser mantidas entre as que estão presentes no branch atual (HEAD) ou as do branch relativo ao merge ou stash, como uma combinação de ambas as alterações.
+
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
 diferenças entre eles?
