@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perguntas - Programação Web Avançada</title>
+  <style>
+    .bold {
+      font-weight: bold;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    main > ol > li > p:first-of-type {
+      font-size: 1.2rem;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Programação Web Avançada - <span class="italic">Mestrado em Engenharia Informática e Tecnologia Web</span></h1>
+    <h3>Ficha prática para treino de manuseamento de conteúdos em repositórios Github</h3>
+
+    <ol>
+      <li>
+        <p>O que são operações de <span class="bold italic">“Commit”</span>, <span class="bold italic">“Push”</span> e <span class="bold italic">“Pop”</span> efetuadas num repositório?</p>
+        <ul>
+          <li>
+            <p>A operação <span class="bold underline">Commit</span> consiste em guardar alterações num repositório. Operação essa que pode conter, por exemplo, alterações em ficheiros existentes, adicionar novos ficheiros ou remover ficheiros de um repositório.</p>
+          </li>
+          <li>
+            <p>A operação <span class="bold underline">Push</span> permite enviar, ou puxar, atualizações presentes num repositório local para um repositório remoto (por exemplo, um repositório no GitHub).</p>
+            <p>Os commits são um bom exemplo das alterações que podem ser puxadas para um repositório remoto, fazendo com que este fique ao mesmo nível do repositório local.</p>
+          </li>
+          <li>
+            <p>A operação <span class="bold underline">Pop</span>, ou <span class="bold italic underline">stash pop</span>, consiste em remover alterações locais que foram previamente guardadas na lista de <span class="bold italic">stash</span> e em adicioná-las ao repositório local no estado em este que se encontra.</p>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <p>Quais são as vantagens de usar <span class="bold italic">Branches</span> num repositório git?</p>
+        <p>O uso de <span class="bold italic">Branches</span> num repositório git proporciona muitas vantages, especialmente no que toca à colaboração com vários elementos de uma equipa no mesmo repositório. Algumas dessas vantagens incluem:</p>
+        <ul>
+          <li>
+            <p>Padronização de um <span class="italic">"Gitflow"</span>, com processos e nomenclaturas claras seguidas por toda a equipa, o que facilita processos como o desenvolvimento de novas funcionalidades, lançamentos de novas versões e resolução de erros.</p>
+          </li>
+          <li>
+            <p>Eficiência na colaboração, permitindo que vários membros trabalharem em simultanêo no mesmo repositório com a mínima fricção.</p>
+          </li>
+          <li>
+            <p>Facilita tanto a visão geral de alterações com operações como o <span class="bold">Diff</span>, como a revisão das mesmas por outros membros da equipa, recorrendo por exemplo à criação de um <span class="italic">"Pull Request"</span> (este nome pode variar entre plataformas, mas é provavelmente o mais conhecido devido ao seu uso no Github).</p>
+          </li>
+          <li>
+            <p>Flexibilidade para trocar contexto, por exemplo passar do desenvolvimento de uma nova funcionalidade para a resolução de erro crítico em produção com facilidade.</p>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <p>Nos Merges de conteúdos resultantes de um <span class="bold italic">“Pop”</span> podem resultar em conflitos. Em que consistem e como podem ser resolvidos esses conflitos?</p>
+        <p>Os conflitos podem acontecer quando a mesma região de um ficheiro foi alterada em mais do que um <span class="italic">branch</span>, ou presente num <span class="italic">stash</span> como neste caso, e o git não consegue decidir automaticamente que versão da alteração deve manter.</p>
+        <p>Estes conflitos podem ser manualmente resolvidos em todos os blocos alterados e em conflito, tanto escolhendo quais alterações devem ser mantidas entre as que estão presentes no branch atual (HEAD) ou as do branch relativo ao merge ou stash, como uma combinação de ambas as alterações.</p>
+      </li>
+
+      <li>
+        <p><span class="bold italic">“Clone”</span> e <span class="bold italic">“Fork”</span> são formas diferentes de replicar um repositório Git. Quais as diferenças entre eles?</p>
+        <p>Embora ambas as operações <span class="bold underline">Clone</span> e <span class="bold underline">Fork</span> repliquem um repositório git, a forma como essa réplica é feita e utilizada, assim como a sua relação com o repositório original são bastante diferentes.</p>
+        <ul>
+          <li>
+            <p>A operação <span class="bold">Clone</span> replica um repositório git remoto para uma máquina local.</p>
+            <p>Permitindo assim trabalhar localmente no repositório e interagir diretamente com o repositório original, por exemplo, através da operação <span class="bold">Push</span>.
+          </li>
+          <li>
+            <p>Já a operação <span class="bold">Fork</span> cria uma réplica independente do repositório, geralmente numa platforma como o Github. Essensialmente, um novo repositório com base mas desconectado do repositório original.</p>
+            <p>É uma operação que permite, por exemplo, contribuir em repositórios sem afetar o original, podendo mais tarde criar "Pull Requests" para o repositório de base do fork.</p>
+            <p>Permite também utilizar o repositório original como um ponto de partida para a criação de um projeto novo, sem afetar o repositório original.</p>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </main>
+</body>
+</html>
