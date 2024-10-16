@@ -20,3 +20,10 @@ Estes conflitos podem ser manualmente resolvidos em todos os blocos alterados e 
 
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
 diferenças entre eles?
+Embora ambas as operações "Clone" e "Fork" repliquem um repositório git, a forma como essa réplica é feita e utilizada, assim como a sua relação com o repositório original são bastante diferentes.
+A operação "Clone" replica um repositório git remoto para uma máquina local.
+Permitindo assim trabalhar localmente no repositório e interagir diretamente com o repositório original, por exemplo, através da operação "Push".
+
+Já a operação "Fork" cria uma réplica independente do repositório, geralmente numa platforma como o Github. Essensialmente, um novo repositório com base mas desconectado do repositório original.
+É uma operação que permite, por exemplo, contribuir em repositórios sem afetar o original, podendo mais tarde criar "Pull Requests" para o repositório de base do fork.
+Permite também utilizar o repositório original como um ponto de partida para a criação de um projeto novo, sem afetar o repositório original.
