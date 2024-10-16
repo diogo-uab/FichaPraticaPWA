@@ -7,6 +7,12 @@ Os commits são um bom exemplo das alterações que podem ser puxadas para um re
 A operação "Pop", ou "stash pop", consiste em remover alterações locais que foram previamente guardadas na lista de "stash" e em adicioná-las ao repositório local no estado em este que se encontra.
 
 2 – Quais sáo as vantagens de usar Branchs num repositório git?
+O uso de Branches num repositório git proporciona muitas vantages, especialmente no que toca à colaboração com vários elementos de uma equipa no mesmo repositório. Algumas dessas vantagens incluem:
+  - Padronização de um "Gitflow", com processos e nomenclaturas claras seguidas por toda a equipa, o que facilita processos como o desenvolvimento de novas funcionalidades, lançamentos de novas versões e resolução de erros.
+  - Eficiência na colaboração, permitindo que vários membros trabalharem em simultâneo no mesmo repositório com mínima fricção.
+  - Facilita tanto a visão geral de alterações com operações como o "Diff", como a revisão das mesmas por outros membros da equipa, recorrendo por exemplo à criação de um "Pull Request" (este nome pode variar entre platformas, mas é provavelmente o mais conhecido devido ao seu uso no Github).
+  - Flexibilidade para trocar contexto, por exemplo passar do desenvolvimento de uma nova funcionalidade para a resolução de erro crítico em produção com facilidade.
+
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
